@@ -1,16 +1,10 @@
 node default {
-  file { '/root/README':
+  file { '/root/puppet_run_confirmation':
     ensure => file,
-    content => 'This is a readme',
+    content => 'Just highlighting that puppet was executed',
     owner   => 'root',
   }
 }
-node 'niflheim' {
+node 'alfheim' {
   include role::master_server
-}
-node /^web/ { 
-  include role::app_server
-}
-node /^db/ {
-  include role::db_server
 }
