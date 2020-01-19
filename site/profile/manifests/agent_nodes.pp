@@ -2,6 +2,7 @@ class profile::agent_nodes {
   include dockeragent
   dockeragent::node { 'conf1.puppet.vm': }
   dockeragent::node { 'conf2.puppet.vm': }
+  dockeragent::node { 'conf3.puppet.vm': }
   host {'conf1.puppet.vm':
     ensure => present,
     ip => '172.18.0.2',

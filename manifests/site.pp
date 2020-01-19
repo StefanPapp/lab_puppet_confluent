@@ -5,6 +5,9 @@ node default {
     owner   => 'root',
   }
 }
-node 'svartalfheim' {
+node 'niflheim' {
   include role::master_server
+}
+node /^conf1/ { 
+  include role::zookeeper
 }
