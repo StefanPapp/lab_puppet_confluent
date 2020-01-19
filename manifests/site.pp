@@ -5,6 +5,6 @@ node default {
     owner   => 'root',
   }
 }
-node 'alfheim' {
+node 'svartalfheim' {
   include role::master_server
 }
