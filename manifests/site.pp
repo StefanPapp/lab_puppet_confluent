@@ -11,3 +11,11 @@ node 'niflheim' {
 node /^conf1/ { 
   include role::zookeeper
 }
+
+node /^conf2/ { 
+  include role::zookeeper
+}
+
+node /^conf3/ { 
+  include role::zookeeper
+}

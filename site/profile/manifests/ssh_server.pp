@@ -6,10 +6,10 @@ class profile::ssh_server {
 		ensure => 'running',
 		enable => 'true',
 	}
-	ssh_authorized_key { 'root@svartalfheim':
+	ssh_authorized_key { 'root@niflheim':
 		ensure => present,
 		user   => 'root',
 		type   => 'ssh-rsa',
-		key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABgQC53Md7mWnjiXsjF9KYm3LvCWdkL7nyMfJxgYzrbzSTwOVqDTqWqh7aTQjtPlh5lTov40xXcgCSSVpP+VAGl13mMKCj6dsWEjIjPSgmZdeYlUuvSb/AWDHdID1JijnR0ey0p8hfd7XJ9NdLaKbpHHe4PxrduZCwYouddA9KSzo0WNO8f6LT7MmX07gNTHKDnsYKqHLbUJ5OHCOxS9fYdC4hp3CillQzCrn0+VWACTzoLcewmGmkrMbQt97hpw+G75ScotGdJmIXFTnVmGHiLPnyjqBNK8e+PY3lCiBYxENFk2uuYcz+IOamt3tiKroiL2YYb6r/pwNXsP8/2NC/r0o2NTNIPFheLRghM8chVy+PJ1gR6aBdL3540/7k9ilCGzU6gos944wNJlqa9+WFD2C6/3rHbxrlpSvNiAS5m2lxEEIbl+fw9wrMbWQ6QgKI8S5bpBkC4MlhDJNVsnJyio7UE164NLgAnT94LftG7epds+EXhEybHEa1T4J0gFhb20s=',
+		key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC2S/UBIjS8MXaBNKuCQAdFA1v2P8NcAxT8J0e0hz4jc0bsA2/2XgZKYyY0Gm9Ac8VdFoad8aReotN+WhP29I2BIRr2wArzgv8p0qAse6Bu0rL5St1xB+m3yvGm25jG4FW8mNwksNEJ1JV1yXa8kReR1AzD5zHygPVWXzalZluhfC/6W2w0V5+8AG/D5I3EUTJfZZ1fqu6cjkPV4ZTARYxsK4L/7dzO/ZbgZWurrr2AaLDVUsqdOBv6pQjfcx62iSGn8k7XZY+d6NMQMUEEa9wwjFB0axVoHFd2FtdGqjAqnGimjMMsulHqE+3/BlmS2sSRxjkipnwcW7BGWDcVzhM7',
 	}  
 }
