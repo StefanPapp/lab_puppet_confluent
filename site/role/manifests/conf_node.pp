@@ -1,3 +1,3 @@
-class role::conf_node {
+class role::zookeeper {
    include profile::zookeeper
 }

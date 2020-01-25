@@ -8,7 +8,7 @@ node default {
 node 'niflheim' {
   include role::master_server
 }
-node /^conf1/ { 
+node 'conf1.puppet.vm' { 
   include role::zookeeper
 }
 
